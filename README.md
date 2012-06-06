@@ -2,7 +2,7 @@
 
 This is a collection of conventions I apply when coding on my [projects](/js-coder/). I plan to write down and publish my conventions for HTML, CSS, PHP and Ruby, too.
 
-**Note**: The document just a very early draft of my coding conventions for JavaScript. I commented out a lot of the stuff I haven't quite decided about or was too lazy to write about. Stay tuned for more. :)
+**Note**: The document is just a very early draft of my coding conventions for JavaScript. I commented out a lot of the stuff I haven't quite decided about or was too lazy to write about. Stay tuned for more. :)
 
 ## JavaScript
 
