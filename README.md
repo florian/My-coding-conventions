@@ -73,6 +73,17 @@ This is a collection of conventions I apply when coding on my [projects](/js-cod
      }(window, document);
      ```
 
+### Comments
+
+ - Do **not** comment obvious things. You will waste your time and the time of the people that will read your code.
+ - Use Markdown like formatting for comments: The backtick character for code references and `*` to emphasize something.
+ - You can prefix your comments with `TODO: ` or `BUG: `. This will make it easier for people to contribute to your project because they will know what they can fix or add. It's also nice because you can easily search through bugs and todos by using your editor's search function.
+
+### Quotes
+
+ - Use single quotes instead of double quotes. This will make it easier to work with HTML in JavaScript because double quotes are what everyone uses in HTML.
+ - Only quote object keys if the key is a reserved word.
+
 ### Whitespace
 
  - Lines should be no longer than 80 characters.
@@ -133,7 +144,7 @@ This is a collection of conventions I apply when coding on my [projects](/js-cod
 
 ### Naming conventions
 
- - If a variable name contains several words, you should follow the `camelCase` convention. That means capitalize the initial letter of all words, but leave the very first letter of the name lowercase. This also the way JavaScript’s buiöt-in stuff is named: e.g. `getElementsByTagName`.
+ - If a variable name contains several words, then you should follow the `camelCase` convention. That means capitalize the initial letter of all words, but leave the very first letter of the name lowercase. This also the way JavaScript’s built-in stuff is named: e.g. `getElementsByTagName`.
  - Capitalize the initial letter of constructor functions – `Constructor`. Again, this is also how JavaScript names the built-in constructor functions.
  - Capitalize all letters of constants – `CONSTANT`.
  - Try to prefix all boolean variables with `is`, `has` or similar prefixes.
@@ -148,17 +159,6 @@ var hasContent = true;
 var $body = document.body;
 var $paragraphs = jQuery('p');
 ```
-
-### Comments
-
- - Do **not** comment obvious things. You will waste your time and the time of the people that will read your code.
- - Use Markdown like formatting for comments: The backtick character for code references and `*` to emphasize something.
- - You can prefix your comments with `TODO: ` or `BUG: `. This will make it easier for people to contribute to your project because they will know what they can fix or add. It's also nice because you can easily search through bugs and todos by using your editor's search function.
-
-### Quotes
-
- - Use single quotes instead of double quotes. This will make it easier to work with HTML in JavaScript because double quotes are what everyone uses in HTML.
- - Only quote object keys if the key is a reserved word.
 
 <!--
 ### Code quality tools
