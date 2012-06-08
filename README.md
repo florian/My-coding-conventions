@@ -6,6 +6,30 @@ This is a collection of conventions I apply when coding on my [projects](/js-cod
 
 ## JavaScript
 
+## Embedding JavaScript
+
+ - Only use minified JavaScript in production. Depending on your code the [Google Closure Compiler](https://developers.google.com/closure/compiler/) or [UglifyJS](https://github.com/mishoo/UglifyJS) will minify your code the best. You should try both and choose the one that generates the smallest code. (For my projects that was usually the Closure Compiler, but UglifyJS does a better job for jQuery.
+ - Use a CDN for serving popular JavaScript libraries.
+ - Concatenate the other files to save HTTP requests.
+ - Omit the `type` and the `language` attributes. `language` is deprecated. `type` is optional in HTML5. It doesn't give you any benefits so there's no reason to use it.
+ - **Never** ever use inline event handlers. It's important to seperate markup and behaviour, it will make your site or app a lot easier to maintain.
+ - Also avoid using inlining code in `script` tags.
+ - Place all your JavaScript before the closing body tag. The page will look like it loads faster because the content and styles are already loaded when the JavaScript is loaded. It's also awesome because you don't need a DOM ready event.
+
+Good:
+
+```html
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="app.js"></script>
+```
+
+Bad:
+
+```html
+<script src="jquery.js" type="text/javascript"></script>
+<script src="app.js" language="JavaScript"></script>
+```
+
 ### General stuff
 
  - Put a semicolon after every statement. Do not rely on automatic semicolon insertion (ASI).
